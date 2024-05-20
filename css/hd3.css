@@ -35,8 +35,14 @@ a {
   color: black;
 }
 
+#hd {
+  padding: 0 3rem;
+}
 #hd .gnb:hover:before {
-  height: 180px;
+  height: calc(13rem + 20px);
+}
+#hd .gnb:hover .gnb_li .gnb_ul {
+  height: calc(13rem + 20px);
 }
 #hd .gnb:before {
   content: "";
@@ -48,8 +54,21 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
+#hd .gnb .gnb_li {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  line-height: 2;
+}
 #hd .gnb .gnb_li .gnb_a {
   font-size: 2rem;
-  line-height: 80px;
+  line-height: 100px;
   display: block;
+}
+#hd .gnb .gnb_li .gnb_ul {
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
